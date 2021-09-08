@@ -2,17 +2,22 @@
 
 > Code for the paper "Rethinking Neural Networks with Benford's Law"
 
+## Usage
+
+- To reproduce Experiment in Table 2 and Fig. 4, run `python3 run_experiments.py`. This will train over 900 LeNet-like models, and will run for a very long time. The results would be collected as `json` files at `./stats/`. Tensorboard logs will be generated at `lightning_logs`. We have provided experimental data at `stats_fig4` for our run.
+
+- Plots in Fig. 3 were plotted using `early stopping results.ipynb`
+
+- Plots in Fig. 5 were plotted using `plot_simulation.ipynb`.
+
+## File Descriptions
+
 `experiments.py`
 
 - contains PyTorch code for conducting all of the experiments in the paper (except for synthetic datasets).
   `run_experiments.py`
 - is a python script to run multiple "experiments" in parallel.
 - Run `python3 run_experiments.py` to reproduce results for most of the experiments presented in the paper.
-
-`synth_reg.zip`
-
-- contains a similar codebase for generating `Synthetic-Uniform` Dataset from our paper, and experiments related to it.
-- extract the zip and run `python3 run_experiments.py` to reproduce results.
 
 `weight_hist.py`
 
