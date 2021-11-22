@@ -1,6 +1,6 @@
 # RethinkingNNsWithBL
 
-> Code for the paper "Rethinking Neural Networks with Benford's Law"
+> Code for the paper "Rethinking Neural Networks with Benford's Law" to appear in NeurIPS 2021 Machine Learning for Physical Sciences Workshop.
 
 ## Usage
 
